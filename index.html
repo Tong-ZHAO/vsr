@@ -25,7 +25,7 @@
 
 
   <title>Variational Shape Reconstruction via Quadric Error Metrics</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -105,6 +105,18 @@
   </div>
 </section> 
 
+<!-- Fastforward-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/fastforward.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -131,30 +143,29 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/g_model.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Variational shape reconstruction. The clustering of the points is randomly initialized, then alternates partitioning and generator updating. Some generators relocate to sharp features after one iteration. New generators are then added. The clustering converges after five iterations. A set of candidate edges is derived from the adjacency between clusters, and candidate facets (red) are generated. The output mesh is reconstructed via a constrained binary solver that selects a subset of the red facets.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/cone.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Variational V.S. Greedy. We are reconstructing a smoothed circular cone. Left: input 3D points. Top: our reconstruction with increasing resolution. Meshes are shown with or without the input points. Bottom: Poisson reconstruction followed by QEM-based mesh decimation.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/bunny.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
+          Comparisons on the bunny. KSR: Kinetic shape reconstruction. DSE: Delaunay surface elements. GoCoPP: Good configurations of planar primitives.
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/pwsmooth_comp.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Comparisons on a mechanical part. 
       </h2>
     </div>
   </div>
@@ -169,7 +180,19 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{10.1145/3588432.3591529, author = {Zhao, Tong and Bus\'{e}, Laurent and Cohen-Steiner, David and Boubekeur, Tamy and Thiery, Jean-Marc and Alliez, Pierre}, title = {Variational Shape Reconstruction via Quadric Error Metrics}, year = {2023}, isbn = {9798400701597}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3588432.3591529}, doi = {10.1145/3588432.3591529}, booktitle = {ACM SIGGRAPH 2023 Conference Proceedings}, articleno = {45}, numpages = {10}, location = {Los Angeles, CA, USA}, series = {SIGGRAPH '23} }</code></pre>
+      <pre><code>@inproceedings{10.1145/3588432.3591529, 
+        author = {Zhao, Tong and Bus\'{e}, Laurent and Cohen-Steiner, David and Boubekeur, Tamy and Thiery, Jean-Marc and Alliez, Pierre}, 
+        title = {Variational Shape Reconstruction via Quadric Error Metrics}, 
+        year = {2023}, 
+        isbn = {9798400701597}, 
+        publisher = {Association for Computing Machinery}, 
+        address = {New York, NY, USA}, url = {https://doi.org/10.1145/3588432.3591529}, 
+        doi = {10.1145/3588432.3591529}, 
+        booktitle = {ACM SIGGRAPH 2023 Conference Proceedings}, 
+        articleno = {45}, 
+        numpages = {10}, 
+        location = {Los Angeles, CA, USA}, 
+        series = {SIGGRAPH '23} }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
